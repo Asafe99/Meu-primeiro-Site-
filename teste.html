@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Media Queries</title>
+    <style>
+        /* Estilos padrão para todos os dispositivos */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Permite posicionamento absoluto do botão hamburger */
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: none; /* Esconde o menu por padrão em todas as versões */
+        }
+
+        nav ul li {
+            display: block;
+            margin-bottom: 10px;
+            text-align: center; /* Centraliza os itens do menu */
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Versão para tablets e desktops */
+        @media only screen and (min-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            header {
+                padding: 40px;
+            }
+            nav ul {
+                justify-content: flex-end; /* Alinha o menu à direita na versão desktop */
+                display: flex; /* Exibe o menu na versão desktop */
+            }
+            nav ul li {
+                margin-right: 40px;
+            }
+            section {
+                margin: 40px;
+                padding: 40px;
+            }
+            .menu-toggle {
+                display: none; /* Oculta o botão hamburger em resoluções maiores que 767px */
+            }
+        }
+
+        /* Versão para tablets */
+        @media only screen and (max-width: 991px) {
+            body {
+               background-color: green;
+               font-size: 14px;
+            }
+            header {
+                padding: 30px;
+            }
+            nav ul li {
+                margin-right: 30px;
+            }
+            section {
+                margin: 30px;
+                padding: 30px;
+            }
+        }
+
+        /* Versão para smartphones */
+        @media only screen and (max-width: 767px) {
+            body {
+                background-color: red;
+            }
+            nav ul {
+                display: none; /* Esconde o menu hamburguer por padrão na versão móvel */
+            }
+            .menu-toggle {
+                display: block; /* Exibe o ícone do menu hamburguer apenas na versão móvel */
+                position: absolute; /* Posiciona o botão hamburger */
+                top: 20px;
+                right: 20px;
+                background: none;
+                border: none;
+                color: #fff;
+                font-size: 20px;
+                cursor: pointer;
+                z-index: 999; /* Garante que o botão hamburger esteja acima de outros elementos */
+            }
+            .menu-toggle:focus {
+                outline: none; /* Remove a borda de foco */
+            }
+            header {
+                padding: 15px;
+            }
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>;
+</head>
+<body>
+    <header>
+        <h1>Meu Site Responsivo</h1>
+        <button class="menu-toggle">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Seção 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula, felis eu fermentum congue.</p>
+        <img src="https://via.placeholder.com/600&quot; alt="Imagem de Exemplo">
+    </section>
+    <section>
+        <h2>Seção 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula, felis eu fermentum congue.</p>
+        <img src="https://via.placeholder.com/600&quot; alt="Imagem de Exemplo">
+    </section>
+    <footer>
+        <p>&copy; 2024 Meu Site Responsivo</p>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            // Captura o clique no botão de alternância de menu
+            $('.menu-toggle').click(function(){
+                // Alterna a visibilidade do menu
+                $('nav ul').slideToggle();
+            });
+
+            // Esconde o menu ao redimensionar a janela para desktop
+            $(window).resize(function(){
+                if($(window).width() > 767) {
+                    $('nav ul').removeAttr('style');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

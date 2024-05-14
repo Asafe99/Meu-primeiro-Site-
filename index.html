@@ -1,0 +1,151 @@
+<DOCTYPE html>
+<html>
+	
+	<!--Colocando o título-->
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title> AdventureLand </title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+	
+	
+	
+	<!-- Colocando a descrição-->
+	
+	<meta name= "Esse parque teve como sua história pensando no tédio das crianças, 
+					esse caso inspirou nossa empresa para existência dela!"> 
+   </meta>
+
+
+</head>
+
+
+<!--Descrevendo o parque-->
+	<body>
+		
+		
+	<harder>
+		<div class="doid">
+			<center><h1 style="color:rgb(15, 11, 15)"> AdvantureLand </h1></center>
+		</div>
+	<button class="menu-toggle">&#9776;</button>
+    <div class="dd">
+	<nav>
+		<ul>
+			<li><a href="fale_conosco.html">Fale conosco e Horários</a></li>
+			<li><a href="valore.html">Valores</a></li>
+			<li><a href="endereco.html">Endereço</a></li>
+			<li><a href="cadastro.html">Cadastro</a></li>
+			<li><a href="login.html">Login</a></li>
+		</ul>
+	</nav>
+</div>
+	
+	
+	
+		<center><h1>Venha conferir o parque mais divertido!</h1>
+		
+		<center><img src= 'imagens/roda_gigante.jfif'height="300px"> </img></center>
+		
+		
+		<p>
+			
+			
+			
+			<h3><center>Nossa empresa tem a intenção de fazer seu filho ter o melhor dia, 
+			o melhor aniversário e a melhor diversão.<br> Temos diversos brinquedos para crianças,<br> 
+			e também vale ressaltar os brinquedos que trazem a maior adrenalina!</br></h3>
+			
+			
+			</center>
+			
+		</p>
+		
+		
+		
+			<center>
+				<div class="table-responsive">
+					<table class="table">
+					 
+						<td>
+							<img src='imagens/montanha_russa.jfif'height="220px" width="255"><h3> <center>Montanha russa</center></h3> </img> 
+						</td>
+				
+						
+						
+						<td>
+					         <img src='imagens/brinquedos_felizes.jpg'height="220px" width="300"> </img>
+					<center>	
+						<h3>Carrossel</h3>
+					</center>	
+						</td>
+						
+						
+						<td>
+						
+									<img src='imagens/carrinho_.jfif' height="px" width="220px"></img>
+
+							<center>
+								<h3>Diversões</h3>
+							</center>
+						</td>	
+
+				</table>
+			</div>
+	</center>
+	   
+	<div class="a">
+        <center>
+                
+            
+            <h2>
+                    
+                    <a href= "fale_conosco.html" target="_next"> Fale conosco e Horários</a> |
+                    <a href= "valore.html" target="_next"> Valores </a> |
+                    <a href= "endereco.html" target="_next"> Endereço </a> | 
+                    <a href= "cadastro.html" target="_next">Cadastro</a> |
+                    <a href= "login.html" target="_next">Fazer login</a>
+                </h2>
+            
+            </center>
+        </div>
+
+    <script>
+        $(document).ready(function(){
+            // Captura o clique no botão de alternância de menu
+            $('.menu-toggle').click(function(){
+                // Alterna a visibilidade do menu
+                $('nav ul').slideToggle();
+            });
+
+            // Esconde o menu ao redimensionar a janela para desktop
+            $(window).resize(function(){
+                if($(window).width() > 767) {
+                    $('nav ul').removeAttr('style');
+                }
+            });
+        });
+    </script>
+	</div>	
+	
+		<div id='confirmacao'></div>
+	
+	</script>
+
+
+	<script>
+		//Declarando e contenando os strings
+		let confirmacion = confirm("Você tem certeza que quer acessar esta página?");
+		if(!confirmacion){
+			location.href= "https://youtube.com";
+			
+		} 
+		
+		
+	</script>
+
+
+
+
+	</body>
+</html>		

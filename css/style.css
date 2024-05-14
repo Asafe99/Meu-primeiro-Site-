@@ -1,0 +1,297 @@
+
+        body{
+            background: rgb(250, 169, 63);
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .content{
+            padding: 20px;
+            max-width: 500px ;
+            background-color: rgb(250, 183, 96);
+            border-radius: 30px;
+            border:0px 0px 0px solid rgb(rgb(0, 0, 0));
+            margin-bottom: 5px;
+            border-bottom: 20px;
+            box-shadow: 0 0 70px rgb(167, 102, 5);
+            display: flex;
+            justify-content: center;
+        }
+       
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea{
+            padding: 5px;
+            box-sizing: border-box;
+            width: 300px;
+            height: 40px;
+            display: flex;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            justify-content: center;
+            border-radius: 5px;
+            text-align: justify;
+        }
+        .z{
+            justify-content: center;
+            text-align:center;
+            
+            
+        }
+
+
+        input[type="radio"],
+        textarea{
+            padding: 5px;
+            box-sizing: border-box;
+            width: 300px;
+            height: 20px;
+            display: flex;
+            justify-content: left;
+            border-radius: 5px;
+        }
+        input[type="observacoes"],
+        textarea{
+            padding: 5px;
+            box-sizing: border-box;
+            width: 300px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+
+        }
+        
+        input[type="submit"]{
+            color:white;
+            background-color: green;
+            border-radius: 5px;
+            width: 70px;
+            height: 25px;
+            display:flex;
+            justify-content: center;
+        }
+        
+        
+       input[type="submit"]:hover{
+            border:10px yellow;
+            background-color: rgb(89, 248, 89);
+            transition:0.4s;
+        }
+    .a{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color:black;
+        cursor: pointer;
+        border-width: 10px;
+        max-width: 300px auto;
+        display: flex;
+        justify-content: center;
+    }
+       
+
+    a:hover {  
+    border: 10px solid rgb(255, 230, 0);
+    background-color: rgb(250, 245, 245);
+    transition: 0.4s; 
+    
+    }   
+    
+       .text{
+            max-width: 500px ;
+            box-sizing: border-box;
+            background-color: rgb(245, 180, 82);
+            border-radius: 80px;
+            padding:20px;
+            box-shadow:0 0 80px rgb(241, 193, 102);
+            display:flex;
+            justify-content: center;
+            
+       }
+      
+       .titles{
+    
+            max-width: 500px;
+            background-color: rgb(250, 225, 112);
+            box-shadow: 0 0 10px rgb(18, 1, 19);
+            border-radius: 10px;
+            margin:50px;
+            display:flex;
+            justify-content: center;
+            border: double 10px black;
+            
+       }
+
+       .jof{
+        
+            text-align: left;
+            width: 500px;
+            color:rgb(14, 6, 19);
+            background-color: rgb(253, 197, 94);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(12, 8, 8);
+            display:flex;
+            justify-content: center;
+            margin: 50px auto;
+            border: ridge black;
+       }
+       .doid{
+        max-width: 500px auto;
+        background-color: rgb(250, 215, 169);
+        border-radius: 8px;
+        padding:10px;
+        box-shadow: 0 0 50px black;
+        margin:30px;
+    
+       }
+       
+       
+       @media only screen and(device-whidth:900px){
+        body{
+           background-color: red;
+        }
+
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f09c3c;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #160f0f;
+        padding: 20px;
+        text-align: center;
+        position: relative; /* Permite posicionamento absoluto do botão hamburger */
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: none; /* Esconde o menu por padrão em todas as versões */
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center; /* Centraliza os itens do menu */
+    }
+
+    nav ul li a {
+        color: #0e0b0b;
+        text-decoration: none;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px;
+        background-color: #0e0a0a;
+        border-radius: 5px;
+    }
+
+    section h2 {
+        color: #333;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        background-color: #333;
+        color: #0f0d0d;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Versão para tablets e desktops */
+    @media only screen and (min-width: 768px) {
+        body {
+            font-size: 16px;
+        }
+        header {
+            padding: 40px;
+        }
+        nav ul {
+            justify-content: flex-end; /* Alinha o menu à direita na versão desktop */
+            display: flex; /* Exibe o menu na versão desktop */
+        }
+        nav ul li {
+            margin-right: 40px;
+        }
+        section {
+            margin: 40px;
+            padding: 40px;
+        }
+        .menu-toggle {
+            display: none; /* Oculta o botão hamburger em resoluções maiores que 767px */
+        }
+        .dd{
+            display: none;
+        }
+    }
+
+    /* Versão para tablets */
+    @media only screen and (max-width: 991px) {
+        body {
+           background-color: yellow;
+           font-size: 14px;
+        }
+        header {
+            padding: 30px;
+        }
+        nav ul li {
+            margin-right: 30px;
+        }
+        section {
+            margin: 30px;
+            padding: 30px;
+        }
+    }
+
+    /* Versão para smartphones */
+    @media only screen and (max-width: 767px) {
+        body {
+            background-color: orange;
+        }
+        nav ul {
+            display: none; /* Esconde o menu hamburguer por padrão na versão móvel */   
+        }
+        .menu-toggle {
+            display: block; /* Exibe o ícone do menu hamburguer apenas na versão móvel */
+            position: absolute; /* Posiciona o botão hamburger */
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: #140e0e;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 999; /* Garante que o botão hamburger esteja acima de outros elementos */
+        
+        }
+    
+        .menu-toggle:focus {
+            outline: none; /* Remove a borda de foco */
+        }
+        header {
+            padding: 15px;
+        }
+        
+    }
+   
